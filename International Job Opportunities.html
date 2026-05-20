@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Job Opportunities</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f4f8;
+            color: #2d3748;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a365d, #2b6cb0);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .toc {
+            background: white;
+            max-width: 1200px;
+            margin: 30px auto;
+            border-radius: 12px;
+            padding: 25px 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .toc h2 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: #1a365d;
+            border-bottom: 2px solid #2b6cb0;
+            padding-bottom: 8px;
+        }
+
+        .toc ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .toc ul li a {
+            background: #ebf8ff;
+            color: #2b6cb0;
+            padding: 8px 18px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 1px solid #bee3f8;
+            transition: all 0.3s;
+        }
+
+        .toc ul li a:hover {
+            background: #2b6cb0;
+            color: white;
+        }
+
+        .section {
+            max-width: 1400px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+            padding: 20px 25px;
+            border-radius: 12px;
+            color: white;
+        }
+
+        .section-header.cz-2year { background: linear-gradient(135deg, #d63031, #e17055); }
+        .section-header.cz-90days { background: linear-gradient(135deg, #c0392b, #e74c3c); }
+        .section-header.germany { background: linear-gradient(135deg, #2d3436, #636e72); }
+        .section-header.serbia { background: linear-gradient(135deg, #c0392b, #8e44ad); }
+        .section-header.slovakia { background: linear-gradient(135deg, #27ae60, #2ecc71); }
+
+        .section-header h2 {
+            font-size: 1.8rem;
+        }
+
+        .section-header .flag {
+            font-size: 2.5rem;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            font-size: 0.88rem;
+        }
+
+        thead tr {
+            background: linear-gradient(135deg, #1a365d, #2b6cb0);
+            color: white;
+        }
+
+        thead th {
+            padding: 14px 12px;
+            text-align: left;
+            font-weight: 700;
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #e2e8f0;
+            transition: background 0.2s;
+        }
+
+        tbody tr:hover {
+            background: #ebf8ff;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f7fafc;
+        }
+
+        tbody tr:nth-child(even):hover {
+            background: #ebf8ff;
+        }
+
+        td {
+            padding: 12px;
+            vertical-align: top;
+            line-height: 1.6;
+        }
+
+        td:first-child {
+            font-weight: 700;
+            color: #2b6cb0;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .job-title {
+            font-weight: 700;
+            color: #1a365d;
+            font-size: 0.95rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .badge-green {
+            background: #c6f6d5;
+            color: #276749;
+        }
+
+        .badge-red {
+            background: #fed7d7;
+            color: #9b2c2c;
+        }
+
+        .badge-blue {
+            background: #bee3f8;
+            color: #2c5282;
+        }
+
+        .badge-orange {
+            background: #feebc8;
+            color: #7b341e;
+        }
+
+        .salary-tag {
+            background: #e6fffa;
+            color: #234e52;
+            padding: 5px 10px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            display: inline-block;
+        }
+
+        ul.duties {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.duties li {
+            padding: 2px 0;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        ul.duties li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #2b6cb0;
+            font-weight: bold;
+        }
+
+        ul.docs {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.docs li {
+            padding: 2px 0;
+            padding-left: 15px;
+            position: relative;
+            font-size: 0.82rem;
+        }
+
+        ul.docs li::before {
+            content: "📄";
+            position: absolute;
+            left: 0;
+            font-size: 0.7rem;
+            top: 4px;
+        }
+
+        .nationality-tag {
+            background: #faf5ff;
+            color: #553c9a;
+            border: 1px solid #e9d8fd;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 0.82rem;
+        }
+
+        .location-tag {
+            background: #fffaf0;
+            color: #7b341e;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            font-weight: 600;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #1a365d, #2b6cb0);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 8px 0;
+            opacity: 0.9;
+        }
+
+        .warning {
+            background: #fffbeb;
+            border-left: 4px solid #f6ad55;
+            padding: 15px 20px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 20px;
+            font-size: 0.92rem;
+            color: #744210;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.6rem; }
+            .section-header h2 { font-size: 1.3rem; }
+            thead th { font-size: 0.78rem; padding: 10px 8px; }
+            td { padding: 8px; font-size: 0.82rem; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>🌍 International Job Opportunities</h1>
+    <p>Visa-supported work opportunities across Europe — Read job details carefully before applying.</p>
+</header>
+
+<!-- TABLE OF CONTENTS -->
+<div class="toc">
+    <h2>📋 Table of Contents</h2>
+    <ul>
+        <li><a href="#cz-2year">🇨🇿 Czech Republic — 2 Year Visa</a></li>
+        <li><a href="#cz-90days">🇨🇿 Czech Republic — 90 Days</a></li>
+        <li><a href="#germany">🇩🇪 Germany</a></li>
+        <li><a href="#serbia">🇷🇸 Serbia</a></li>
+        <li><a href="#slovakia">🇸🇰 Slovakia</a></li>
+    </ul>
+</div>
+
+<!-- ==================== CZECH REPUBLIC 2 YEAR ==================== -->
+<div class="section" id="cz-2year">
+    <div class="section-header cz-2year">
+        <span class="flag">🇨🇿</span>
+        <h2>Czech Republic — 2 Year Visa</h2>
+    </div>
+
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nationality</th>
+                    <th>Job Title</th>
+                    <th>Age Limit</th>
+                    <th>Salary</th>
+                    <th>Job Place</th>
+                    <th>Job Responsibilities</th>
+                    <th>Food</th>
+                    <th>Accommodation</th>
+                    <th>Gender</th>
+                    <th>Required Documents</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- ROW 1 -->
+                <tr>
+                    <td>1</td>
+                    <td><span class="nationality-tag">All except Bangladesh, Pakistan, African countries.<br>✅ Philippines, India, Nepal, Egypt, Azerbaijan, Uzbekistan, Vietnam<br><em>(Others – individual agreement)</em></span></td>
+                    <td><span class="job-title">Warehouse Work</span></td>
+                    <td>18 – 52</td>
+                    <td><span class="salary-tag">1,100 €/month</span></td>
+                    <td><span class="location-tag">📍 Ostrava</span></td>
+                    <td><ul class="duties">
+                        <li>Labeling products</li>
+                        <li>Moving goods within the warehouse</li>
+                        <li>Inventory control</li>
+                        <li>Working with a scanner and electric forklift</li>
+                        <li>Maintaining order in the workplace</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Male</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 2 -->
+                <tr>
+                    <td>2</td>
+                    <td><span class="nationality-tag">Open</span></td>
+                    <td><span class="job-title">Automotive Production Worker</span></td>
+                    <td>18 – 52</td>
+                    <td><span class="salary-tag">135 – 170 CZK/hour</span></td>
+                    <td><span class="location-tag">📍 Bílina, Česká Lípa</span></td>
+                    <td><ul class="duties">
+                        <li>Assemble products according to instructions</li>
+                        <li>Perform tasks as directed by supervisor</li>
+                        <li>Maintain order and clean before shift handover</li>
+                        <li>Follow internal control procedures</li>
+                        <li>Tighten components</li>
+                        <li>Apply labels and mark parts</li>
+                        <li>Check quality of finished products</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Men, Women & Married Couples</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 3 -->
+                <tr>
+                    <td>3</td>
+                    <td><span class="nationality-tag">Philippines, India, Nepal, Taiwan, Hong Kong, Africa</span></td>
+                    <td><span class="job-title">VZV Forklift Driver</span></td>
+                    <td>18 – 50</td>
+                    <td><span class="salary-tag">180 CZK/hour + Bonuses</span></td>
+                    <td><span class="location-tag">📍 Bor (near Tachov)</span></td>
+                    <td><ul class="duties">
+                        <li>Operate forklift (VZV) safely and efficiently</li>
+                        <li>Load and unload goods/materials</li>
+                        <li>Move and organize stock within the warehouse</li>
+                        <li>Follow workplace safety regulations</li>
+                        <li>Assist with storage and inventory handling</li>
+                    </ul></td>
+                    <td><span class="badge badge-orange">🍽️ Lunch Provided</span></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Male</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 4 -->
+                <tr>
+                    <td>4</td>
+                    <td><span class="nationality-tag">Open</span></td>
+                    <td><span class="job-title">Warehouse Worker (Packer)</span></td>
+                    <td>18 – 50</td>
+                    <td><span class="salary-tag">185 CZK/hour<br>→ 3rd month: 195 CZK/hour</span></td>
+                    <td><span class="location-tag">📍 Sebranice near Boskovice (35 km from Brno)</span></td>
+                    <td><ul class="duties">
+                        <li>Pack and label products accurately</li>
+                        <li>Sort and organize items in the warehouse</li>
+                        <li>Prepare orders for shipment and delivery</li>
+                        <li>Load and unload goods when required</li>
+                        <li>Maintain cleanliness and organization</li>
+                        <li>Assist with inventory checking and stock handling</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Male & Female</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 5 -->
+                <tr>
+                    <td>5</td>
+                    <td><span class="nationality-tag">Open</span></td>
+                    <td><span class="job-title">Automotive / Operator</span></td>
+                    <td>18 – 50</td>
+                    <td><span class="salary-tag">170 CZK/hour<br>→ 2nd month: 175 CZK/hour</span></td>
+                    <td><span class="location-tag">📍 Sebranice near Boskovice (35 km from Brno)</span></td>
+                    <td><ul class="duties">
+                        <li>Operate automotive machinery and equipment safely</li>
+                        <li>Assist in vehicle production or assembly processes</li>
+                        <li>Perform basic machine operation and monitoring</li>
+                        <li>Inspect parts and materials for quality standards</li>
+                        <li>Follow workplace safety and operational procedures</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Male & Female</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 6 -->
+                <tr>
+                    <td>6</td>
+                    <td><span class="nationality-tag">Open</span></td>
+                    <td><span class="job-title">Automotive / Operator<br><small>(Cushions & Headrests)</small></span></td>
+                    <td>18 – 50</td>
+                    <td><span class="salary-tag">Women: 160→170 CZK/hour<br>Men: 170 CZK/hour</span></td>
+                    <td><span class="location-tag">📍 Česká Lípa (80 km from Prague)</span></td>
+                    <td><ul class="duties">
+                        <li>Manufacture cushions and headrest components</li>
+                        <li>Operate production and assembly equipment</li>
+                        <li>Assemble and shape foam or cushion materials</li>
+                        <li>Inspect products to ensure quality standards</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-blue">Male & Female</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 7 -->
+                <tr>
+                    <td>7</td>
+                    <td><span class="nationality-tag">Open</span></td>
+                    <td><span class="job-title">Warehouse Worker</span></td>
+                    <td>18 – 50</td>
+                    <td><span class="salary-tag">150 CZK/hour (company housing)<br>155 CZK/hour (own housing)</span></td>
+                    <td><span class="location-tag">📍 Near Brno (20 minutes)</span></td>
+                    <td><ul class="duties">
+                        <li>Assemble products and customer orders</li>
+                        <li>Sort items accurately for packing and dispatch</li>
+                        <li>Pack goods safely and efficiently</li>
+                        <li>Work in a warm warehouse environment</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-blue">Male & Female</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 8 -->
+                <tr>
+                    <td>8</td>
+                    <td><span class="nationality-tag">Open</span></td>
+                    <td><span class="job-title">VZV Forklift Operator<br><small>(Cosmetics Warehouse)</small></span></td>
+                    <td>18 – 50</td>
+                    <td><span class="salary-tag">170 CZK/hour + Monthly Bonus</span></td>
+                    <td><span class="location-tag">📍 20 minutes from Brno</span></td>
+                    <td><ul class="duties">
+                        <li>Operate VZV forklift safely within the cosmetics warehouse</li>
+                        <li>Load, unload, and move cosmetic products and materials</li>
+                        <li>Organize stock and assist with warehouse storage</li>
+                        <li>Prepare goods for packing and dispatch</li>
+                        <li>Follow warehouse safety and hygiene standards</li>
+                    </ul></td>
+                    <td><span class="badge badge-orange">🍽️ Provided</span></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Male</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 9 -->
+                <tr>
+                    <td>9</td>
+                    <td><span class="nationality-tag">Open</span></td>
+                    <td><span class="job-title">Machine Operator<br><small>(Glass Production Plant)</small></span></td>
+                    <td>18 – 50</td>
+                    <td><span class="salary-tag">149 CZK/hour<br>→ after 3 months: 167 CZK/hour (net) + Bonuses</span></td>
+                    <td><span class="location-tag">📍 Bílina (30 km from Ústí nad Labem)</span></td>
+                    <td><ul class="duties">
+                        <li>Operate glass production machinery safely and efficiently</li>
+                        <li>Monitor machine performance during production</li>
+                        <li>Inspect glass products for quality and defects</li>
+                        <li>Assist with loading materials into machines</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-blue">Male & Female</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 10 -->
+                <tr>
+                    <td>10</td>
+                    <td><span class="nationality-tag">Open</span></td>
+                    <td><span class="job-title">Warehouse Worker (Packer)</span></td>
+                    <td>18 – 50</td>
+                    <td><span class="salary-tag">180 CZK/hour</span></td>
+                    <td><span class="location-tag">📍 Tachov</span></td>
+                    <td><ul class="duties">
+                        <li>Pack and label products accurately</li>
+                        <li>Sort and organize items in the warehouse</li>
+                        <li>Prepare orders for shipment and delivery</li>
+                        <li>Load and unload goods when required</li>
+                        <li>Maintain cleanliness and organization</li>
+                        <li>Assist with inventory checking and stock handling</li>
+                    </ul></td>
+                    <td><span class="badge badge-orange">🍽️ Lunch Provided</span></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Male</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 11 -->
+                <tr>
+                    <td>11</td>
+                    <td><span class="nationality-tag">Open</span></td>
+                    <td><span class="job-title">Seamstresses</span></td>
+                    <td>18 – 55</td>
+                    <td><span class="salary-tag">28,770 CZK gross / 168 hours</span></td>
+                    <td><span class="location-tag">📍 Tachov</span></td>
+                    <td><ul class="duties">
+                        <li>Stitch and assemble garments or fabric materials</li>
+                        <li>Operate sewing machines and related equipment</li>
+                        <li>Measure, cut, and prepare fabrics for production</li>
+                        <li>Inspect finished products for quality and accuracy</li>
+                        <li>Perform alterations and repairs when required</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-blue">Female</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 12 -->
+                <tr>
+                    <td>12</td>
+                    <td><span class="nationality-tag">Open</span></td>
+                    <td><span class="job-title">Automotive / Operator<br><small>(Car Factory — Headrests)</small></span></td>
+                    <td>18 – 50</td>
+                    <td><span class="salary-tag">175 CZK/hour</span></td>
+                    <td><span class="location-tag">📍 Česká Lípa</span></td>
+                    <td><ul class="duties">
+                        <li>Operate automotive machinery and equipment safely</li>
+                        <li>Assist in vehicle production or assembly processes</li>
+                        <li>Perform basic machine operation and monitoring</li>
+                        <li>Inspect parts and materials for quality standards</li>
+                        <li>Follow workplace safety and operational procedures</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Male</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 13 -->
+                <tr>
+                    <td>13</td>
+                    <td><span class="nationality-tag">Open</span></td>
+                    <td><span class="job-title">Automotive / Operator<br><small>(Noise & Vibration Components)</small></span></td>
+                    <td>18 – 52</td>
+                    <td><span class="salary-tag">Men: 165→170 CZK/hour<br>Women: 155→160 CZK/hour<br>(after 3 months)</span></td>
+                    <td><span class="location-tag">📍 Česká Lípa (80 km from Prague)</span></td>
+                    <td><ul class="duties">
+                        <li>Manufacture noise and vibration components</li>
+                        <li>Work alongside robotic production systems</li>
+                        <li>Perform assembly and production tasks in pairs</li>
+                        <li>Monitor product quality and production standards</li>
+                        <li>Operate machinery and production equipment safely</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-blue">Men, Women & Married Couples</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 14 -->
+                <tr>
+                    <td>14</td>
+                    <td><span class="nationality-tag">Open</span></td>
+                    <td><span class="job-title">Seamstresses</span></td>
+                    <td>18 – 55</td>
+                    <td><span class="salary-tag">160 CZK/hour</span></td>
+                    <td><span class="location-tag">📍 Písek</span></td>
+                    <td><ul class="duties">
+                        <li>Stitch and assemble garments or fabric materials</li>
+                        <li>Operate sewing machines and related equipment</li>
+                        <li>Measure, cut, and prepare fabrics for production</li>
+                        <li>Inspect finished products for quality and accuracy</li>
+                        <li>Perform alterations and repairs when required</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Female</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 15 -->
+                <tr>
+                    <td>15</td>
+                    <td><span class="nationality-tag">Open</span></td>
+                    <td><span class="job-title">Automotive / Product Operator</span></td>
+                    <td>18 – 55</td>
+                    <td><span class="salary-tag">150 CZK/hour</span></td>
+                    <td><span class="location-tag">📍 Písek</span></td>
+                    <td><ul class="duties">
+                        <li>Operating machinery in automotive/product manufacturing</li>
+                        <li>Assembling automotive parts/components per specifications</li>
+                        <li>Monitoring production lines for quality and efficiency</li>
+                        <li>Performing basic machine setup and routine checks</li>
+                        <li>Sorting, packing, and labeling finished goods</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Female</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 16 -->
+                <tr>
+                    <td>16</td>
+                    <td><span class="nationality-tag">Open</span></td>
+                    <td><span class="job-title">Automotive / Operator</span></td>
+                    <td>18 – 55</td>
+                    <td><span class="salary-tag">145 CZK/hour<br>→ from 4th month: 150 CZK/hour</span></td>
+                    <td><span class="location-tag">📍 Lanskroun</span></td>
+                    <td><ul class="duties">
+                        <li>Manufacture noise and vibration components</li>
+                        <li>Work alongside robotic production systems</li>
+                        <li>Perform assembly and production tasks in pairs</li>
+                        <li>Monitor product quality and production standards</li>
+                        <li>Operate machinery and production equipment safely</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Men, Women & Married Couples</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 17 -->
+                <tr>
+                    <td>17</td>
+                    <td><span class="nationality-tag">Open</span></td>
+                    <td><span class="job-title">Operator<br><small>(Plastic Tank Manufacturing)</small></span></td>
+                    <td>18 – 50</td>
+                    <td><span class="salary-tag">Men: 170 CZK/hour<br>Women: 155 CZK/hour</span></td>
+                    <td><span class="location-tag">📍 Moravany (15 km from Pardubice)</span></td>
+                    <td><ul class="duties">
+                        <li>Operate and monitor automated robotic machines for plastic tank manufacturing</li>
+                        <li>Support production in a clean, odor-free environment</li>
+                        <li>Load raw materials and supervise machine cycles</li>
+                        <li>Perform quality control checks on finished plastic tanks</li>
+                        <li>Ensure products meet company and safety standards before packing</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Men, Women & Married Couples</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 18 -->
+                <tr>
+                    <td>18</td>
+                    <td><span class="nationality-tag">Open</span></td>
+                    <td><span class="job-title">VZV Forklift Driver<br><small>(Electric Forklift)</small></span></td>
+                    <td>18 – 50</td>
+                    <td><span class="salary-tag">1st: 190 → 2nd: 195<br>3rd: 200 → 4th: 205 CZK/hour</span></td>
+                    <td><span class="location-tag">📍 Žatec</span></td>
+                    <td><ul class="duties">
+                        <li>Operating electric VZV forklifts for loading/unloading/transporting</li>
+                        <li>Moving pallets and materials safely within warehouse</li>
+                        <li>Stacking and organizing stock in designated storage locations</li>
+                        <li>Performing daily forklift checks (battery, brakes, safety systems)</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Male</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 19 -->
+                <tr>
+                    <td>19</td>
+                    <td><span class="nationality-tag">Open</span></td>
+                    <td><span class="job-title">Car Painter</span></td>
+                    <td>18 – 50</td>
+                    <td><span class="salary-tag">270 CZK/hour</span></td>
+                    <td><span class="location-tag">📍 Milovice (40 min from Prague)</span></td>
+                    <td><ul class="duties">
+                        <li>Preparing vehicle surfaces for painting (sanding, masking, cleaning)</li>
+                        <li>Mixing and matching paint colors per specifications</li>
+                        <li>Applying paint using spray guns and related equipment</li>
+                        <li>Ensuring smooth, even coating and high-quality finish</li>
+                        <li>Fixing minor surface defects before painting</li>
+                        <li>Polishing and finishing painted surfaces for final delivery</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Male</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 20 -->
+                <tr>
+                    <td>20</td>
+                    <td><span class="nationality-tag">Open</span></td>
+                    <td><span class="job-title">Warehouse Worker</span></td>
+                    <td>18 – 50</td>
+                    <td><span class="salary-tag">150 CZK/hour<br>→ after 3 months: 160 CZK/hour + Bonuses</span></td>
+                    <td><span class="location-tag">📍 Bor (near Tachov)</span></td>
+                    <td><ul class="duties">
+                        <li>Assemble products and customer orders</li>
+                        <li>Sort items accurately for packing and dispatch</li>
+                        <li>Pack goods safely and efficiently</li>
+                        <li>Work in a warm warehouse environment</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-blue">Male & Female</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 21 -->
+                <tr>
+                    <td>21</td>
+                    <td><span class="nationality-tag">Open</span></td>
+                    <td><span class="job-title">VZV Forklift Driver</span></td>
+                    <td>18 – 50</td>
+                    <td><span class="salary-tag">1st month: 170 CZK/hour<br>→ from 2nd month: 175 CZK/hour</span></td>
+                    <td><span class="location-tag">📍 Sebranice near Boskovice (35 km from Brno)</span></td>
+                    <td><ul class="duties">
+                        <li>Operate forklift (VZV) safely and efficiently</li>
+                        <li>Load and unload goods/materials</li>
+                        <li>Move and organize stock within the warehouse</li>
+                        <li>Follow workplace safety regulations</li>
+                        <li>Assist with storage and inventory handling</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Male & Female</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 22 -->
+                <tr>
+                    <td>22</td>
+                    <td><span class="nationality-tag">Open</span></td>
+                    <td><span class="job-title">Automotive / Operator<br><small>(Robotic Systems)</small></span></td>
+                    <td>18 – 50</td>
+                    <td><span class="salary-tag">Men: 140→150 CZK/hour<br>Women: 140→145 CZK/hour<br>(from 2nd month)</span></td>
+                    <td><span class="location-tag">📍 Česká Lípa (80 km from Prague)</span></td>
+                    <td><ul class="duties">
+                        <li>Manufacture noise and vibration components</li>
+                        <li>Work alongside robotic production systems</li>
+                        <li>Perform assembly and production tasks in pairs</li>
+                        <li>Monitor product quality and production standards</li>
+                        <li>Operate machinery and production equipment safely</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Men, Women & Married Couples</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 23 -->
+                <tr>
+                    <td>23</td>
+                    <td><span class="nationality-tag">Open</span></td>
+                    <td><span class="job-title">Automotive / Operator<br><small>(Glass Production — Female)</small></span></td>
+                    <td>18 – 50</td>
+                    <td><span class="salary-tag">135 CZK/hour<br>→ after 3 months: 140 CZK/hour</span></td>
+                    <td><span class="location-tag">📍 Bílina (30 km from Ústí nad Labem)</span></td>
+                    <td><ul class="duties">
+                        <li>Operate machinery for automotive glass/windows production</li>
+                        <li>Assist in cutting, shaping, and processing car window glass</li>
+                        <li>Monitor automated production lines and robotic systems</li>
+                        <li>Perform quality checks for cracks, bubbles, and dimensional accuracy</li>
+                        <li>Handle glass products carefully to avoid damage or defects</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Female</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 24 -->
+                <tr>
+                    <td>24</td>
+                    <td><span class="nationality-tag">Open</span></td>
+                    <td><span class="job-title">Automotive / Operator<br><small>(Glass Production — Mixed)</small></span></td>
+                    <td>18 – 50</td>
+                    <td><span class="salary-tag">140 CZK/hour</span></td>
+                    <td><span class="location-tag">📍 Bílina (30 km from Ústí nad Labem)</span></td>
+                    <td><ul class="duties">
+                        <li>Operate machinery for automotive glass/windows production</li>
+                        <li>Assist in cutting, shaping, and processing car window glass</li>
+                        <li>Monitor automated production lines and robotic systems</li>
+                        <li>Perform quality checks for cracks, bubbles, and dimensional accuracy</li>
+                        <li>Handle glass products carefully to avoid damage or defects</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Women, Men & Couples</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 25 -->
+                <tr>
+                    <td>25</td>
+                    <td><span class="nationality-tag">Open</span></td>
+                    <td><span class="job-title">VZV Forklift Driver</span></td>
+                    <td>18 – 50</td>
+                    <td><span class="salary-tag">180 CZK/hour + Bonuses</span></td>
+                    <td><span class="location-tag">📍 Bílina (10 km from Ústí nad Labem)</span></td>
+                    <td><ul class="duties">
+                        <li>Operate forklift (VZV) safely and efficiently</li>
+                        <li>Load and unload goods/materials</li>
+                        <li>Move and organize stock within the warehouse</li>
+                        <li>Follow workplace safety regulations</li>
+                        <li>Assist with storage and inventory handling</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-blue">Male</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 26 -->
+                <tr>
+                    <td>26</td>
+                    <td><span class="nationality-tag">Mongolia, Philippines, Serbia, Montenegro, Moldova, India, Belarus, Kazakhstan, North Macedonia, Georgia, Armenia</span></td>
+                    <td><span class="job-title">Welder</span></td>
+                    <td>25 – 55</td>
+                    <td><span class="salary-tag">1,500 EUR/month gross</span></td>
+                    <td><span class="location-tag">📍 Czech Republic (various locations)</span></td>
+                    <td><ul class="duties">
+                        <li>Performing welding tasks using MIG, TIG, or arc welding techniques</li>
+                        <li>Joining metal parts according to technical drawings and specifications</li>
+                        <li>Preparing materials by cutting, grinding, and cleaning surfaces before welding</li>
+                        <li>Inspecting welds for strength, accuracy, and quality finish</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Male</span></td>
+                    <td><ul class="docs">
+                        <li>Passport scan (all pages)</li>
+                        <li>Europass resume</li>
+                        <li>Video of work (straight and angle welding)</li>
+                        <li>Education diploma (basic education acceptable)</li>
+                        <li>Certificate confirming qualifications (TIG/MIG/MAG)</li>
+                        <li>Certificate of no criminal record (not older than 3 months)</li>
+                    </ul></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- ==================== CZECH REPUBLIC 90 DAYS ==================== -->
+<div class="section" id="cz-90days">
+    <div class="section-header cz-90days">
+        <span class="flag">🇨🇿</span>
+        <h2>Czech Republic — 90 Days</h2>
+    </div>
+
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nationality</th>
+                    <th>Job Title</th>
+                    <th>Age Limit</th>
+                    <th>Salary</th>
+                    <th>Job Place</th>
+                    <th>Job Responsibilities</th>
+                    <th>Food</th>
+                    <th>Accommodation</th>
+                    <th>Gender</th>
+                    <th>Required Documents</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- ROW 1 -->
+                <tr>
+                    <td>1</td>
+                    <td><span class="nationality-tag">All nationalities except terrorist-listed countries</span></td>
+                    <td><span class="job-title">Production of Rubber Coating</span></td>
+                    <td>18 – 55</td>
+                    <td><span class="salary-tag">130 CZK/hour (net)</span></td>
+                    <td><span class="location-tag">📍 Český Těšín</span></td>
+                    <td><ul class="duties">
+                        <li>Ensuring smooth production process of rubber mats</li>
+                        <li>Putting rubber granules into the press machine</li>
+                        <li>Removing finished rubber mats from the press machine</li>
+                        <li>Quality control of manufactured products (visual inspection)</li>
+                        <li>Maintaining order and cleanliness in the workplace</li>
+                        <li>Performing other simple production tasks as required</li>
+                    </ul></td>
+                    <td><span class="badge badge-orange">🍽️ Provided</span></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Men & Women</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 2 -->
+                <tr>
+                    <td>2</td>
+                    <td><span class="nationality-tag">All nationalities except terrorist-listed countries</span></td>
+                    <td><span class="job-title">Taxi Driver</span></td>
+                    <td>18 – 50</td>
+                    <td><span class="salary-tag">30,000 CZK/month</span></td>
+                    <td><span class="location-tag">📍 Prague</span></td>
+                    <td><ul class="duties">
+                        <li>Safe and comfortable transportation of passengers</li>
+                        <li>Compliance with traffic rules and corporate service standards</li>
+                        <li>Maintaining a clean and tidy vehicle</li>
+                        <li>Polite and friendly communication with passengers</li>
+                        <li>Using navigation systems and mobile apps to accept and fulfill orders</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Male</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                        <li>⚠️ Valid driver's license — Category "B" required</li>
+                        <li>Experience as taxi driver is a significant advantage</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 3 -->
+                <tr>
+                    <td>3</td>
+                    <td><span class="nationality-tag">All nationalities except terrorist-listed countries</span></td>
+                    <td><span class="job-title">Forklift Driver</span></td>
+                    <td>18 – 55</td>
+                    <td><span class="salary-tag">160 CZK/hour (net)</span></td>
+                    <td><span class="location-tag">📍 Prague, Ostrava</span></td>
+                    <td><ul class="duties">
+                        <li>Professional and safe operation of forklift trucks of various types</li>
+                        <li>Efficient placement of goods on warehouse shelves and storage areas</li>
+                        <li>Movement of goods around the warehouse in compliance with safety rules</li>
+                        <li>Participation in loading and unloading vehicles</li>
+                        <li>Maintaining order and cleanliness in the workplace</li>
+                        <li>Performing other warehouse work as required</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Male</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                        <li>⚠️ Forklift warehouse experience is a significant advantage</li>
+                    </ul></td>
+                </tr>
+                <!-- ROW 4 -->
+                <tr>
+                    <td>4</td>
+                    <td><span class="nationality-tag">All nationalities except terrorist-listed countries</span></td>
+                    <td><span class="job-title">Warehouse Worker</span></td>
+                    <td>18 – 55</td>
+                    <td><span class="salary-tag">1st: 125 → 2nd: 130 → 3rd: 135 CZK/hour (net)</span></td>
+                    <td><span class="location-tag">📍 Prague, Ostrava</span></td>
+                    <td><ul class="duties">
+                        <li>Effective work with a scanner to identify and record goods</li>
+                        <li>Accurate and timely picking of orders according to delivery notes</li>
+                        <li>Maintaining order and cleanliness in the warehouse</li>
+                        <li>Performing other warehouse work as needed</li>
+                    </ul></td>
+                    <td><span class="badge badge-red">❌ Not Provided</span></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Men & Women</span></td>
+                    <td><ul class="docs">
+                        <li>Scanned copy of passport</li>
+                        <li>Activation Date of Documents</li>
+                        <li>Questionnaire</li>
+                        <li>Selected vacancy</li>
+                        <li>Last Name / First Name</li>
+                        <li>Country / City</li>
+                        <li>Street and House/Apartment Number</li>
+                        <li>Postal Code</li>
+                        <li>Country and City for Visa Registration</li>
+                        <li>Embassy Email</li>
+                    </ul></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- ==================== GERMANY ==================== -->
+<div class="section" id="germany">
+    <div class="section-header germany">
+        <span class="flag">🇩🇪</span>
+        <h2>Germany</h2>
+    </div>
+
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Job Title</th>
+                    <th>Age Limit</th>
+                    <th>Salary</th>
+                    <th>Job Place</th>
+                    <th>Job Responsibilities</th>
+                    <th>Accommodation</th>
+                    <th>Gender</th>
+                    <th>Required Documents</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><span class="job-title">Warehouse Work</span></td>
+                    <td>18 – 55</td>
+                    <td><span class="salary-tag">2,000 EUR/month</span></td>
+                    <td><span class="location-tag">📍 Marl</span></td>
+                    <td><ul class="duties">
+                        <li>Picking and packing orders using a tablet and scanner</li>
+                        <li>Active movement around the warehouse</li>
+                        <li>General warehouse handyman duties</li>
+                    </ul></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Male & Female</span></td>
+                    <td><ul class="docs"><li>CV</li><li>Passport</li></ul></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><span class="job-title">Chicken Production Warehouse</span></td>
+                    <td>18 – 55</td>
+                    <td><span class="salary-tag">3,200 EUR/month</span></td>
+                    <td><span class="location-tag">📍 Nordhern</span></td>
+                    <td><ul class="duties">
+                        <li>Working in a production unit for cutting, packing, and labeling</li>
+                    </ul></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Male & Female</span></td>
+                    <td><ul class="docs"><li>CV</li><li>Passport</li></ul></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><span class="job-title">Construction Worker</span></td>
+                    <td>18 – 55</td>
+                    <td><span class="salary-tag">3,000 EUR/month</span></td>
+                    <td><span class="location-tag">📍 Germany</span></td>
+                    <td><ul class="duties">
+                        <li>Worker on indoor construction sites</li>
+                    </ul></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Male & Female</span></td>
+                    <td><ul class="docs">
+                        <li>Scan of all passport pages</li>
+                        <li>CV</li>
+                        <li>⚠️ Diploma — Category H+ (Anabin system)</li>
+                        <li>⚠️ Drivers with C/E licence</li>
+                        <li>Knowledge of English: A1</li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><span class="job-title">Packing & Sorting Worker</span></td>
+                    <td>18 – 55</td>
+                    <td><span class="salary-tag">€14.53 gross/hour</span></td>
+                    <td><span class="location-tag">📍 Germany</span></td>
+                    <td><ul class="duties">
+                        <li>Packaging finished goods according to company standards</li>
+                        <li>Sorting products by type, size, or quality</li>
+                        <li>Preparing goods for storage or dispatch</li>
+                        <li>Maintaining cleanliness and order in the work area</li>
+                        <li>Following safety and quality guidelines</li>
+                    </ul></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Male & Female</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><span class="job-title">Warehouse & Logistics Worker</span></td>
+                    <td>18 – 55</td>
+                    <td><span class="salary-tag">€14.53 gross/hour</span></td>
+                    <td><span class="location-tag">📍 Germany</span></td>
+                    <td><ul class="duties">
+                        <li>Loading and unloading goods (less than 1 kg)</li>
+                        <li>Organizing and storing products in the warehouse</li>
+                        <li>Picking, packing, and preparing orders</li>
+                        <li>Supporting inventory and logistics operations</li>
+                        <li>Using basic warehouse tools and equipment</li>
+                    </ul></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Male & Female</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><span class="job-title">Production & Auxiliary Worker</span></td>
+                    <td>18 – 55</td>
+                    <td><span class="salary-tag">€14.53 gross/hour</span></td>
+                    <td><span class="location-tag">📍 Germany</span></td>
+                    <td><ul class="duties">
+                        <li>Assisting in production processes</li>
+                        <li>Operating simple production machinery (after training)</li>
+                        <li>Supporting skilled workers on the production line</li>
+                        <li>Monitoring production flow and reporting issues</li>
+                        <li>Maintaining workplace cleanliness</li>
+                    </ul></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Male & Female</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><span class="job-title">Cleaning, Housekeeping & Facility Services Staff</span></td>
+                    <td>18 – 55</td>
+                    <td><span class="salary-tag">€14.53 gross/hour</span></td>
+                    <td><span class="location-tag">📍 Germany</span></td>
+                    <td><ul class="duties">
+                        <li>Cleaning rooms, offices, and common areas</li>
+                        <li>Housekeeping duties in hotels or facilities</li>
+                        <li>Waste disposal and hygiene maintenance</li>
+                        <li>Refilling supplies and reporting maintenance issues</li>
+                        <li>Ensuring cleanliness standards are met</li>
+                    </ul></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Male & Female</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><span class="job-title">Driver <small>(Qualified Applicants Only)</small></span></td>
+                    <td>18 – 55</td>
+                    <td><span class="salary-tag">€14.53 gross/hour</span></td>
+                    <td><span class="location-tag">📍 Germany</span></td>
+                    <td><ul class="duties">
+                        <li>Driving company vehicles as assigned</li>
+                        <li>Transporting goods or personnel safely</li>
+                        <li>Performing basic vehicle checks</li>
+                        <li>Following traffic laws and company policies</li>
+                        <li>Maintaining delivery schedules</li>
+                    </ul></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Male & Female</span></td>
+                    <td>—</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- ==================== SERBIA ==================== -->
+<div class="section" id="serbia">
+    <div class="section-header serbia">
+        <span class="flag">🇷🇸</span>
+        <h2>Serbia</h2>
+    </div>
+
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nationality</th>
+                    <th>Job Title</th>
+                    <th>Age Limit</th>
+                    <th>Salary</th>
+                    <th>Job Place</th>
+                    <th>Job Responsibilities</th>
+                    <th>Accommodation</th>
+                    <th>Gender</th>
+                    <th>Required Documents</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><span class="nationality-tag">Asia, Africa (upon individual request)</span></td>
+                    <td><span class="job-title">Warehouse Worker</span></td>
+                    <td>21 – 48</td>
+                    <td><span class="salary-tag">713 EUR/month</span></td>
+                    <td><span class="location-tag">📍 Belgrade</span></td>
+                    <td><ul class="duties">
+                        <li>Load, unload, and sort building materials in the warehouse</li>
+                        <li>Keep accurate records of all materials and equipment</li>
+                        <li>Maintain equipment in accordance with established requirements</li>
+                        <li>Visual inspection, acceptance, and documentation of materials</li>
+                        <li>Perform a variety of manual labor-related tasks</li>
+                    </ul></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Male</span></td>
+                    <td><ul class="docs">
+                        <li>Passport (minimum 2 years valid)</li>
+                        <li>CV with mentioned experience</li>
+                        <li>Questionnaire: Last Name, First Name, Phone Number, Citizen of, Email</li>
+                        <li>Embassy Address: Country, City, Street, Postal Code</li>
+                        <li>Embassy Email</li>
+                        <li>Selected vacancy</li>
+                    </ul></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- ==================== SLOVAKIA ==================== -->
+<div class="section" id="slovakia">
+    <div class="section-header slovakia">
+        <span class="flag">🇸🇰</span>
+        <h2>Slovakia</h2>
+    </div>
+
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nationality</th>
+                    <th>Job Title</th>
+                    <th>Age Limit</th>
+                    <th>Salary</th>
+                    <th>Job Place</th>
+                    <th>Job Responsibilities</th>
+                    <th>Accommodation</th>
+                    <th>Gender</th>
+                    <th>Required Documents</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><span class="nationality-tag">All nationalities (with appointments)</span></td>
+                    <td><span class="job-title">Car Factory Worker</span></td>
+                    <td>21 – 45</td>
+                    <td><span class="salary-tag">To be confirmed</span></td>
+                    <td><span class="location-tag">📍 Slovakia</span></td>
+                    <td><ul class="duties">
+                        <li>Working in automotive production lines to assemble vehicle parts</li>
+                        <li>Assisting in installation of interior and exterior car parts</li>
+                        <li>Operating basic tools and supporting automated production systems</li>
+                        <li>Inspecting parts for quality, defects, and proper fitting</li>
+                        <li>Following safety procedures and manufacturing standards</li>
+                    </ul></td>
+                    <td><span class="badge badge-green">✅ Provided</span></td>
+                    <td><span class="badge badge-blue">Male</span></td>
+                    <td><ul class="docs">
+                        <li>Passport</li>
+                        <li>Police Clearance Certificate (PCC)</li>
+                        <li>CV</li>
+                    </ul></td>
+                    <td>⏳ Appointment timeframe: <strong>3 months</strong></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><span class="nationality-tag">All nationalities (with appointments)</span></td>
+                    <td><span class="job-title">Construction Worker</span></td>
+                    <td>21 – 45</td>
+                    <td><span class="salary-tag">900 – 1,100 EUR/month</span></td>
+                    <td><span class="location-tag">📍 Slovakia</span></td>
+                    <td><ul class="duties">
+                        <li>Performing general labor tasks on construction sites</li>
+                        <li>Assisting skilled workers (masons, carpenters, electricians)</li>
+                        <li>Loading, unloading, and moving construction materials</li>
+                        <li>Preparing and cleaning work areas before and after tasks</li>
+                        <li>Digging, lifting, and supporting site preparation activities</li>
+                        <li>Using basic hand tools safely under supervision</li>
+                    </ul></td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><span class="nationality-tag">All Nationalities</span></td>
+                    <td><span class="job-title">Packers, Sorters, Production Workers<br><small>(Warehouse / Manufacturing)</small></span></td>
+                    <td>—</td>
+                    <td><span class="salary-tag">Depends on specific vacancy</span></td>
+                    <td><span class="location-tag">📍 Slovakia</span></td>
+                    <td><ul class="duties">
+                        <li>Packing finished goods accurately according to company standards</li>
+                        <li>Sorting products based on size, type, quality, or destination</li>
+                        <li>Assisting in production line operations and basic machine support</li>
+                        <li>Labeling, sealing, and preparing items for storage or dispatch</li>
+                        <li>Checking products for defects and ensuring quality standards</li>
+                        <li>Loading and unloading goods in warehouse or factory settings</li>
+                    </ul></td>
+                    <td><span class="badge badge-blue">Depends on vacancy & employer</span></td>
+                    <td>—</td>
+                    <td><ul class="docs">
+                        <li>Scan of Passport</li>
+                        <li>Contact Number</li>
+                        <li>Email</li>
+                        <li>Residential Address</li>
+                        <li>Completed application / candidate form</li>
+                        <li>Additional documents (if required for specific vacancy)</li>
+                    </ul></td>
+                    <td>—</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>📩 <strong>To apply or for more information, submit the required documents listed under each job position.</strong></p>
+    <p>⚠️ All job listings are subject to change. Please confirm current availability before applying.</p>
+</footer>
+
+</body>
+</html>
