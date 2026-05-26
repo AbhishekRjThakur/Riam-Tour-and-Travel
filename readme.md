@@ -1,4 +1,3 @@
-```markdown
 # RIAM Tour & Travel 🌍
 
 <div align="center">
@@ -171,11 +170,9 @@ Namasuba to the ends of the Earth.
 Plan your perfect trip in **3 simple steps** and receive a dynamically
 calculated quotation straight to your phone!
 
-```text
 Step 1 → Choose Category    (Safari / Visa & Passports / Jobs & Careers)
 Step 2 → Enter Your Details (Dates, Destination, Requirements)
 Step 3 → Submit & Receive   (Instant WhatsApp Quotation)
-```
 
 ### Categories
 
@@ -264,4 +261,3 @@ Step 3 → Submit & Receive   (Instant WhatsApp Quotation)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-Message-green)](https://api.whatsapp.com/send/?phone=%2B256780669550&text&type=phone_number&app_absent=0)
 
 </div>
-```
