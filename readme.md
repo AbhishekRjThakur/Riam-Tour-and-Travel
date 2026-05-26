@@ -1,168 +1,267 @@
-# 🌍 RIAM Tour & Travel
+```markdown
+# RIAM Tour & Travel 🌍
 
-![RIAM Tour & Travel Banner](https://img.shields.io/badge/Established-2022-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
-![Status](https://img.shields.io/badge/Status-Active-success)
+<div align="center">
 
-> **Plan Together. Explore Everywhere.**
+![RIAM Tour & Travel](https://img.shields.io/badge/RIAM-Tour%20%26%20Travel-green?style=for-the-badge&logo=globe)
+![Established](https://img.shields.io/badge/Established-2023-orange?style=for-the-badge)
+![Location](https://img.shields.io/badge/Location-Uganda-red?style=for-the-badge)
 
-A comprehensive travel and tour agency platform based in Namasuba, Entebbe Road, Uganda. Specializing in Ugandan safaris, global travel services, visa processing, and international career opportunities.
+### *Plan Together. Explore Everywhere.*
 
----
+**Uganda's Leading Agency for Premium Safaris, Visa Administration, Airport Clearances & International Job Recruitment**
 
-## 📋 Table of Contents
+[![Visit Website](https://img.shields.io/badge/🌐%20Visit%20Website-Live%20Site-brightgreen?style=for-the-badge)](https://abhishekrjthakur.github.io/Riam-Tour-and-Travel/)
+[![Facebook](https://img.shields.io/badge/Facebook-RIAM%20Tours-blue?style=for-the-badge&logo=facebook)](https://www.facebook.com/p/RIAM-TOURS-safaristravels-100070620174090/)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-Chat%20Now-25D366?style=for-the-badge&logo=whatsapp)](https://api.whatsapp.com/send/?phone=%2B256780669550&text&type=phone_number&app_absent=0)
 
-- [About](#about)
-- [Key Statistics](#key-statistics)
-- [Features](#features)
-- [Services](#services)
-- [Installation](#installation)
-- [Contact Information](#contact-information)
-- [Contributing](#contributing)
-- [License](#license)
+</div>
 
 ---
 
-## 🎯 About
+## 🏠 Overview
 
-**RIAM Tour & Travel** is Uganda's premier gateway for:
+**RIAM Tour and Travel** is a multi-faceted travel powerhouse operating from the heart of
+**Namasuba, Entebbe Road, Uganda**. Founded in **2023**, we believe in
+*planning together and exploring everywhere.*
 
-- 🦍 Breathtaking Ugandan safaris (Gorilla trekking, wildlife tours)
-- ✈️ Global travel navigation & flight bookings
-- 📄 Visa, passport & National ID processing
-- 💼 Elite international career opportunities
-- 🚗 Airport transfers & cargo shipping
-- 🏕️ Camping, hiking & adventure trips
-
-**Established:** 2022  
-**Location:** Namasuba, Entebbe Road, Kampala/Entebbe, Uganda  
-**Availability:** 24/7 Online Support
+From adrenaline-fueled **Ugandan Gorilla Treks** to government administrative services
+like **Passport, Visa, and National ID processing**, and verified
+**international career placements** — RIAM is your premier gateway from
+Namasuba to the ends of the Earth.
 
 ---
 
-## 📊 Key Statistics
+## 📊 Our Track Record
 
-| Metric | Value |
-|--------|-------|
-| **Established** | 2022 |
-| **Passports & Visas Processed** | 1,500+ |
-| **Job Process Time** | 1-6 Months |
-| **Reliability Rate** | 100% |
-
----
-
-## ✨ Features
-
-- **Custom Trip Planner** - Interactive 3-step travel planning tool
-- **Real-time WhatsApp Integration** - Direct consultation requests
-- **Multi-Service Portfolio** - Tours, administrative services, airport handling
-- **2026 Career Intake** - International job placement program
-- **Responsive Design** - Mobile-first, fully responsive interface
-- **24/7 Support** - Round-the-clock customer assistance
-- **Secure Processing** - Reliable document and visa clearance
-- **Modern UI/UX** - Clean interface with smooth animations
-- **Client Testimonials** - Real feedback from satisfied customers
-- **Live Chat Widget** - Instant customer support
+| 🏢 Metric                  | 📈 Achievement                        |
+|---------------------------|---------------------------------------|
+| 🗓️ Established            | 2023 — Certified Travel Agency        |
+| 🛂 Passports & Visas       | 500+ Successfully Handled             |
+| ⏱️ Job Process Time        | 1 to 6 Months Maximum                 |
+| ✅ Clearance Reliability   | 99% Reliable Rate                     |
 
 ---
 
-## 🛎️ Services
+## 🌐 Live Website
 
-### 🦁 Tours & Safaris
+🔗 **[https://abhishekrjthakur.github.io/Riam-Tour-and-Travel/](https://abhishekrjthakur.github.io/Riam-Tour-and-Travel/)**
 
-#### 1. **Gorilla Trekking & Wildlife**
-- Face-to-face mountain gorilla encounters in Bwindi Impenetrable Forest
-- Permit acquisition support
-- Professional local guides
-- Premium ecolodge accommodations
-- Safe transfers and logistics
+### Website Sections
 
-#### 2. **Camping, Hiking & Road-Trips**
-- Rugged terrain exploration
-- Custom 4x4 roadtrip vehicles
-- Border-crossing assistance
-- High-end camping gear
-- Wilderness adventures and nature walks
+- 🏠 **Home** — Hero landing with service highlights
+- 👥 **About** — Who we are and our story
+- 🛎️ **Services** — Full portfolio of offerings
+- 💼 **Careers 2026** *(NEW)* — International job intake
+- 🗺️ **Trip Planner** — Interactive 3-step travel quotation tool
+- 📞 **Contact** — Get in touch with our team
 
 ---
 
-### 📄 Administrative & Travel Services
+## 🛎️ Our Core Services
 
-#### 3. **Visa, Passports & ID Processing**
-- National ID card processing
-- International passport expediting
-- Tourist & business visa filings
-- Fast-track booking services
-- Stress-free document validation
+### 🦍 Tours & Safaris
 
-#### 4. **Air-Ticketing & Bookings**
-- Multi-airline price comparison
-- Wholesale flight prices
-- Exclusive corporate hotel rates
-- VIP status access
-- Flexible booking adjustments
+#### 🐾 Gorilla Trekking & Wildlife
+
+> Get face-to-face with the magnificent mountain gorillas in
+> **Bwindi Impenetrable Forest**.
+
+- ✅ Permit Acquisition Support
+- ✅ Professional Local Guides
+- ✅ Handpicked Ecolodges
+- ✅ Safe & Comfortable Transfers
 
 ---
 
-### ✈️ Airport & Logistics
+#### ⛺ Camping, Hiking & Road-Trips
 
-#### 5. **Airport Clearance & Transfers**
-- 24/7 Entebbe International Airport service
-- VIP clearance desk
-- Luxury drop-offs and pick-ups
-- Punctual chauffeur tracking
-- Active customs clearance assistance
+> Explore Uganda's rugged terrains — perfect for outdoor adventurers.
 
-#### 6. **Cargo Shipping & Car Hiring**
-- International freight handling
-- Customs documentation aid
-- SUV & 4x4 land-cruiser fleet
-- Secure global network
-- Commercial package moving
+- ✅ High-end Camping Gear
+- ✅ Custom 4x4 Road-Trip Vehicles
+- ✅ Border Reaching Assistance
+- ✅ Wilderness Campfires & Nature Walks
 
 ---
 
-### 💼 International Job Placements (2026 Intake)
+### 📋 Administrative & Travel Services
 
-**Processing Time:** 1-6 Months Maximum
+#### 🛂 Visa, Passports & ID Processing
 
-#### Available Opportunities:
+> Avoid bureaucracy — we professionally expedite all official document processing.
 
-| Region | Countries | Industries |
-|--------|-----------|------------|
-| **Middle East** | UAE, Qatar, Saudi Arabia | Hospitality, Security, Logistics, Domestic |
-| **Europe** | Poland, Croatia, Germany | Agriculture, Construction, Caregiving |
-| **North America** | Canada | Skilled Trades, Farmworkers, Logistics |
-| **Asia & Others** | Various | Cargo Logistics, Merchant Marine |
-
-**Requirements:**
-- Valid National ID card
-- Current passport
-- Clear medical record
-
-**Benefits:**
-- ✅ Rapid Processing Time (1-6 months)
-- ✅ Transparent Framework
-- ✅ Complete visa processing
-- ✅ Accommodation partnerships
-- ✅ Full fee breakdown during consultation
+- ✅ Stress-free Document Validation
+- ✅ Fast-track Passport Booking
+- ✅ Tourist & Business Visa Filings
+- ✅ National ID Card Processing
 
 ---
 
-## 📥 Installation
+#### ✈️ Air-Ticketing & Bookings
 
-### Prerequisites
-- Modern web browser (Chrome, Firefox, Safari, Edge)
-- Git installed (optional)
+> Flight pricing comparisons and direct lodging reservations.
 
-### Quick Start
+- ✅ Multi-airline Ticket Comparing
+- ✅ Exclusive Corporate Hotel Rates
+- ✅ Flexible Booking Adjustments
+- ✅ VIP Status & Wholesale Pricing
 
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/riam-tour-travel.git
+---
 
-# Navigate to project directory
-cd riam-tour-travel
+#### 📦 Cargo Shipping & Car Hiring
 
-# Open in browser
-# Simply open index.html in your preferred browser
+> Reliable international cargo handling and high-clearance car rentals.
+
+- ✅ Global Secure Freight Network
+- ✅ Customs Documentation Aid
+- ✅ SUV & 4x4 Land-Cruiser Fleets
+- ✅ Commercial & Private Package Moving
+
+---
+
+### 🛬 Airport Services
+
+#### 🚐 Airport Clearance & Transfers
+
+> Luxury, timely drop-offs and seamless pick-ups from
+> **Entebbe International Airport**.
+
+- ✅ 24/7 Entebbe Pick-up & Drop-offs
+- ✅ VIP Airport Clearance Desk
+- ✅ Punctual Chauffeur Tracking
+- ✅ Active Customs Clearance Services
+
+---
+
+## 💼 International Job Placements — 2026 Intake
+
+> **Looking for a life-changing career abroad?**
+> RIAM facilitates fast, verified global recruitment and visa processing.
+
+### 🌍 Available Opportunities
+
+| 🌍 Region            | 🗺️ Countries               | 💼 Roles Available                          |
+|---------------------|---------------------------|---------------------------------------------|
+| **Middle East**      | UAE, Qatar & Saudi Arabia  | Hospitality, Security, Logistics, Domestic  |
+| **Europe Pathways**  | Poland, Croatia & Germany  | Agriculture, Construction, Caregiving       |
+| **North America**    | Canada Intake Pathways     | Skilled Trades, Farmworkers, Logistics      |
+| **Asia & Others**    | Global Contract Roles      | Cargo Logistics & Merchant Marine           |
+
+### ⚡ Why Choose RIAM for Your Career?
+
+- 🚀 **Rapid Processing** — Complete process takes only **1 to 6 Months** maximum
+- 🔍 **Transparent Framework** — Full layout of all fees, country guidelines & accommodation
+- 🔒 **Verified Opportunities** — All placements are authentic and fully contractual
+
+### 📋 Prerequisites
+
+> **Important:** The following are **mandatory requirements** before applying:
+>
+> - 🪪 Valid National Identification Card
+> - 🛂 Valid International Passport
+> - 🏥 Clear Medical Record
+
+📞 *Contact our Namasuba office for quick assistance with your application.*
+
+---
+
+## 🗺️ Interactive Trip Planner
+
+Plan your perfect trip in **3 simple steps** and receive a dynamically
+calculated quotation straight to your phone!
+
+```text
+Step 1 → Choose Category    (Safari / Visa & Passports / Jobs & Careers)
+Step 2 → Enter Your Details (Dates, Destination, Requirements)
+Step 3 → Submit & Receive   (Instant WhatsApp Quotation)
+```
+
+### Categories
+
+- 🦁 **Wild Safaris** — Gorillas, game drives & hiking
+- 🛂 **Visas & Passports** — National IDs, fast approvals
+- 💼 **Jobs & Careers** — 1–6 Month abroad processing
+
+---
+
+## 💬 Client Testimonials
+
+> *"RIAM made my Gorilla Trekking trip to Bwindi completely flawless.*
+> *They handled permits, selected spectacular safari lodges, and our private*
+> *tour guide knew everything about local animals. Truly recommended!"*
+>
+> — **Sarah Mugisha**, Safari Traveler, 2024 ⭐⭐⭐⭐⭐
+
+---
+
+> *"I processed my express passport and Middle East Visa via their office*
+> *in Namasuba. It took less time than promised! The staff is extremely*
+> *transparent and highly reliable. Kudos to Riam team."*
+>
+> — **John Kasumba**, Administrative Client ⭐⭐⭐⭐⭐
+
+---
+
+> *"Thanks to Riam's 2026 overseas employment placement intake, I currently*
+> *secure professional lodging and work overseas. My recruitment processing*
+> *was handled perfectly in just 3 months."*
+>
+> — **Brenda Atwine**, Overseas Placed Specialist ⭐⭐⭐⭐⭐
+
+---
+
+## 📞 Contact & Reach Us
+
+<div align="center">
+
+| 📍 Detail            | ℹ️ Information                                        |
+|---------------------|------------------------------------------------------|
+| 🏢 **Location**      | Namasuba, Entebbe Road, Kampala / Entebbe, Uganda    |
+| 📱 **Phone**         | +44 25 3651 889                                      |
+| 📱 **Mobile**        | +256 780 669550                                      |
+| 📧 **Email**         | info@riamsafaris.com                                 |
+| 📧 **Gmail**         | Riamsafaris@gmail.com                                |
+| 🕐 **Availability**  | Online 24/7                                          |
+
+</div>
+
+### 🔗 Quick Links
+
+[![🌐 Website](https://img.shields.io/badge/🌐-Visit%20Our%20Website-brightgreen?style=for-the-badge)](https://abhishekrjthakur.github.io/Riam-Tour-and-Travel/)
+[![📘 Facebook](https://img.shields.io/badge/📘-Follow%20on%20Facebook-1877F2?style=for-the-badge)](https://www.facebook.com/p/RIAM-TOURS-safaristravels-100070620174090/)
+[![💬 WhatsApp](https://img.shields.io/badge/💬-Chat%20on%20WhatsApp-25D366?style=for-the-badge)](https://api.whatsapp.com/send/?phone=%2B256780669550&text&type=phone_number&app_absent=0)
+
+---
+
+## 🏅 Why Choose RIAM?
+
+| ✅ Feature                    | 📝 Description                                        |
+|-----------------------------|------------------------------------------------------|
+| 🏆 **Fully Certified**        | Government-recognized and fully licensed             |
+| ✈️ **Airport Clearance**      | Dedicated clearance desk at Entebbe International    |
+| 🚛 **Cargo & Car Hire**       | International freight and SUV fleet management       |
+| 🤝 **Dedicated Support**      | 24/7 online presence and human consultation          |
+| 🌍 **Global Network**         | Partnerships across Middle East, Europe & Americas   |
+| 🦍 **Uganda Safari Expert**   | Premier gorilla trekking & safari expertise          |
+
+---
+
+<div align="center">
+
+---
+
+**© 2026 Riam Tour and Travel. All Rights Reserved.**
+
+*Established 2023 · Namasuba, Entebbe, Uganda*
+
+*Plan Together. Explore Everywhere.* 🌍✈️🦍
+
+---
+
+[![Website](https://img.shields.io/badge/Live-Website-brightgreen)](https://abhishekrjthakur.github.io/Riam-Tour-and-Travel/)
+[![Facebook](https://img.shields.io/badge/Facebook-Page-blue)](https://www.facebook.com/p/RIAM-TOURS-safaristravels-100070620174090/)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-Message-green)](https://api.whatsapp.com/send/?phone=%2B256780669550&text&type=phone_number&app_absent=0)
+
+</div>
+```
